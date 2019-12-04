@@ -1,7 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 let computerMove = 'nieznany ruch';
 
-if(randomNumber == 1){
+if (randomNumber == 1){
   computerMove = 'kamień';
 } else if (randomNumber == 2) {
 	computerMove = 'papier';
@@ -14,7 +14,7 @@ printMessage('Mój ruch (komputera) to: ' + computerMove);
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 let playerMove = 'nieznany ruch';
 
-if(playerInput == '1'){
+if (playerInput == '1'){
   playerMove = 'kamień';
 } else if (playerInput == 2) {
 	playerMove = 'papier';
@@ -23,3 +23,17 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch człowieku to: ' + playerMove);
+
+if (computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'papier' && playerMove == 'nożyce') {
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'kamień') {
+    printMessage('Ty wygrywasz!');
+} else if (playerMove == 'nieznany ruch') {
+    printMessage('Co bez sensu wpisałeś :)');
+} else if (computerMove ==  playerMove) {
+    printMessage('--- Remis --- ');
+} else {
+    printMessage('Przegrałeś monsinior...');
+}
