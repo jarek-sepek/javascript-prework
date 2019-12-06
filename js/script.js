@@ -38,33 +38,3 @@ let playerMove =  getMoveName(playerInput);
 printMessage('Twój ruch człowieku to: ' + playerMove);
 
 printMessage(displayResult(computerMove, playerMove));
-
-/*if (computerMove == 'kamień' && playerMove == 'papier'){
-    return 'Ty wygrywasz!';
-} else if (computerMove == 'papier' && playerMove == 'nożyce') {
-    return 'Ty wygrywasz!';
-} else if (computerMove == 'nożyce' && playerMove == 'kamień') {
-    return 'Ty wygrywasz!';
-} else if (playerMove == 'nieznany ruch') {
-    return 'Co bez sensu wpisałeś :)';
-} else if (computerMove ==  playerMove) {
-    return '--- Remis --- ';
-} else {
-    return ''Przegrałeś monsinior...');
-}
-
-if (randomNumber == 1){
-  computerMove = 'kamień';
-} else if (randomNumber == 2) {
-	computerMove = 'papier';
-} else if (randomNumber == 3) {
-	computerMove = 'nożyce';
-}
-
-if (playerInput == '1'){
-  playerMove = 'kamień';
-} else if (playerInput == 2) {
-	playerMove = 'papier';
-} else if (playerInput == 3) {
-	playerMove = 'nożyce';
-}*/
